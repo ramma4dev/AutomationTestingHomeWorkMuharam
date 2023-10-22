@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>automation-bdd-google</td>
+                          <td>1</td>
+                        <td>22 Oct 2023, 23:27</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepDef.AddItem.and_i_input_valid_password_for_cart_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="466962300">466ms</td>
+                <td class="duration" data-value="233481150">233ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_first_product_again_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="73372800">073ms</td>
+                <td class="duration" data-value="73372800">073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_first_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="111431500">111ms</td>
+                <td class="duration" data-value="111431500">111ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_fourth_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="88197700">088ms</td>
+                <td class="duration" data-value="88197700">088ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_second_product_again_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="72494300">072ms</td>
+                <td class="duration" data-value="72494300">072ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_second_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="123838500">123ms</td>
+                <td class="duration" data-value="123838500">123ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_add_third_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="83064500">083ms</td>
+                <td class="duration" data-value="83064500">083ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_catalog_product()</td>
+                <td>2</td>
+                <td class="duration" data-value="178014100">178ms</td>
+                <td class="duration" data-value="89007050">089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_input_valid_username_for_cart_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="239185200">239ms</td>
+                <td class="duration" data-value="119592600">119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_open_browser_for_cart_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="9370474500">9s 370ms</td>
+                <td class="duration" data-value="4685237250">4s 685ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_should_see_amount_items_on_cart_icon(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="854931600">854ms</td>
+                <td class="duration" data-value="854931600">854ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.i_should_see_amount_items_on_cart_icon_after_i_add_2_items(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="42762000">042ms</td>
+                <td class="duration" data-value="42762000">042ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.located_on_saucedemo_website_for_cart_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="111666100">111ms</td>
+                <td class="duration" data-value="55833050">055ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddItem.open_website_saucedemo_for_cart_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="2234922500">2s 234ms</td>
+                <td class="duration" data-value="1117461250">1s 117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.and_i_click_checkout_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="127379700">127ms</td>
+                <td class="duration" data-value="127379700">127ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.and_i_click_icon_cart()</td>
+                <td>2</td>
+                <td class="duration" data-value="268422700">268ms</td>
+                <td class="duration" data-value="134211350">134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.and_i_input_valid_password_for_checkout_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="447045400">447ms</td>
+                <td class="duration" data-value="223522700">223ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.and_i_select_one_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="117267200">117ms</td>
+                <td class="duration" data-value="117267200">117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.button_checkout_must_be_cannot_clicked()</td>
+                <td>1</td>
+                <td class="duration" data-value="54010300">054ms</td>
+                <td class="duration" data-value="54010300">054ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.i_input_valid_username_for_checkout_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="282301200">282ms</td>
+                <td class="duration" data-value="141150600">141ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.i_open_browser_for_checkout_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="10196704600">10s 196ms</td>
+                <td class="duration" data-value="5098352300">5s 098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.i_should_see_form_information_data()</td>
+                <td>1</td>
+                <td class="duration" data-value="842563700">842ms</td>
+                <td class="duration" data-value="842563700">842ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.located_on_saucedemo_website_for_checkout_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="91713900">091ms</td>
+                <td class="duration" data-value="45856950">045ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.open_web_saucedemo_for_checkout_scenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="2220800100">2s 220ms</td>
+                <td class="duration" data-value="1110400050">1s 110ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOut.page_catalog_product()</td>
+                <td>2</td>
+                <td class="duration" data-value="126402500">126ms</td>
+                <td class="duration" data-value="63201250">063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.ButtonCannotClick()</td>
+                <td>1</td>
+                <td class="duration" data-value="107908000">107ms</td>
+                <td class="duration" data-value="107908000">107ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.andIAddOneProductToCart()</td>
+                <td>2</td>
+                <td class="duration" data-value="168933700">168ms</td>
+                <td class="duration" data-value="84466850">084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.andIInputValidPasswordForInformationDataScenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="414779500">414ms</td>
+                <td class="duration" data-value="207389750">207ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iCatalogProductPage()</td>
+                <td>2</td>
+                <td class="duration" data-value="94291700">094ms</td>
+                <td class="duration" data-value="47145850">047ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iClickButtonContinue()</td>
+                <td>1</td>
+                <td class="duration" data-value="134522700">134ms</td>
+                <td class="duration" data-value="134522700">134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iClickCheckoutButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="241846700">241ms</td>
+                <td class="duration" data-value="120923350">120ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iClickIconCart()</td>
+                <td>2</td>
+                <td class="duration" data-value="204335300">204ms</td>
+                <td class="duration" data-value="102167650">102ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputInvalidFormatDataPostalCode()</td>
+                <td>1</td>
+                <td class="duration" data-value="342387500">342ms</td>
+                <td class="duration" data-value="342387500">342ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidFirstName()</td>
+                <td>1</td>
+                <td class="duration" data-value="182458000">182ms</td>
+                <td class="duration" data-value="182458000">182ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidFirstNameAgain()</td>
+                <td>1</td>
+                <td class="duration" data-value="367997800">367ms</td>
+                <td class="duration" data-value="367997800">367ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidLastName()</td>
+                <td>1</td>
+                <td class="duration" data-value="245816400">245ms</td>
+                <td class="duration" data-value="245816400">245ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidLastNameAgain()</td>
+                <td>1</td>
+                <td class="duration" data-value="257390700">257ms</td>
+                <td class="duration" data-value="257390700">257ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidPostalCode()</td>
+                <td>1</td>
+                <td class="duration" data-value="184561800">184ms</td>
+                <td class="duration" data-value="184561800">184ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iInputValidUsernameForInformationDataScenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="230884200">230ms</td>
+                <td class="duration" data-value="115442100">115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iOpenBrowserForInformationDataScenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="11962939300">11s 962ms</td>
+                <td class="duration" data-value="5981469650">5s 981ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iSeeFormInformationData()</td>
+                <td>2</td>
+                <td class="duration" data-value="84201700">084ms</td>
+                <td class="duration" data-value="42100850">042ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.iShouldSeeCheckOutOverViewPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="871643700">871ms</td>
+                <td class="duration" data-value="871643700">871ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.locatedOnSaucedemoWebsiteForInformationDataScenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="80486500">080ms</td>
+                <td class="duration" data-value="40243250">040ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.CheckOutInformationData.openWebSaucedemoForInformationDataScenario()</td>
+                <td>2</td>
+                <td class="duration" data-value="2187992200">2s 187ms</td>
+                <td class="duration" data-value="1093996100">1s 093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.and_i_input_valid_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="208134600">208ms</td>
+                <td class="duration" data-value="208134600">208ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_go_to_homepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="802900300">802ms</td>
+                <td class="duration" data-value="802900300">802ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_input_empty_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="2123879700">2s 123ms</td>
+                <td class="duration" data-value="2123879700">2s 123ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_input_valid_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="108016900">108ms</td>
+                <td class="duration" data-value="108016900">108ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_input_valid_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="114358100">114ms</td>
+                <td class="duration" data-value="114358100">114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_open_browser()</td>
+                <td>2</td>
+                <td class="duration" data-value="11075645700">11s 075ms</td>
+                <td class="duration" data-value="5537822850">5s 537ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_should_see_error_message(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="724006200">724ms</td>
+                <td class="duration" data-value="724006200">724ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.located_on_saucedemo_website()</td>
+                <td>2</td>
+                <td class="duration" data-value="79966800">079ms</td>
+                <td class="duration" data-value="39983400">039ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.open_website_saucedemo()</td>
+                <td>2</td>
+                <td class="duration" data-value="2184717400">2s 184ms</td>
+                <td class="duration" data-value="1092358700">1s 092ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>53</td>
+              <td>79</td>
+              <td class="duration">1m 4s 612ms</td>
+              <td class="duration">817ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

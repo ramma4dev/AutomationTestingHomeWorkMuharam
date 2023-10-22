@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 65.358 s <<< FAILURE! - in TestRunner.TestRunner
+Add more than 2 item to cart  Time elapsed: 5.48 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[4]> but was:<[3]>
+
+Checkout without selected items  Time elapsed: 7.112 s  <<< FAILURE!
+java.lang.AssertionError
+
+Fill form information data use invalid format data postal code  Time elapsed: 8.775 s  <<< FAILURE!
+java.lang.AssertionError
+

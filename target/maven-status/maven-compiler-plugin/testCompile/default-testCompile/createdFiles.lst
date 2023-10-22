@@ -1,0 +1,5 @@
+StepDef\AddItem.class
+StepDef\Login.class
+TestRunner\TestRunner.class
+StepDef\CheckOut.class
+StepDef\CheckOutInformationData.class
